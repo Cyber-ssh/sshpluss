@@ -38,8 +38,8 @@ criarteste() {
         --text "VC JA CRIOU SSH HOJE !"
       return 0
     }
-    usuario=$(echo teste$(( RANDOM% + 250 )))
-    senha=$((RANDOM% + 99999))
+    usuario=$(echo Cyber$(( RANDOM% + 250 )))
+    senha=$((RANDOM% + 9999))
     limite='1'
     tempo='1'
     tuserdate=$(date '+%C%y/%m/%d' -d " +1 days")
@@ -70,8 +70,8 @@ criarteste2() {
         --text "VC JA CRIOU SSH HOJE !"
       return 0
     }
-    usuario=$(echo teste$(( RANDOM% + 250 )))
-    senha=$((RANDOM% + 99999))
+    usuario=$(echo Cyber$(( RANDOM% + 250 )))
+    senha=$((RANDOM% + 9999))
     limite='1'
     tempo='1'
     tuserdate=$(date '+%C%y/%m/%d' -d " +1 days")
@@ -111,8 +111,8 @@ criarteste3() {
         --text "VC JA CRIOU SSH HOJE !"
       return 0
     }
-    usuario=$(echo teste$(( RANDOM% + 250 )))
-    senha=$((RANDOM% + 99999))
+    usuario=$(echo Cyber$(( RANDOM% + 250 )))
+    senha=$((RANDOM% + 9999))
     limite='1'
     tempo='1'
     tuserdate=$(date '+%C%y/%m/%d' -d " +1 days")
