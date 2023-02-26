@@ -12,8 +12,8 @@ menu() {
         msg+="<b>-------------SEJAM BEM VINDOS-------------</b>\n"
         msg+="=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=\n\n"
         msg+="<b>VENDEDOR OFICIAL DO SOCKSLITE</b>\n"
-	msg+="<b>VALOR:</b> 15 MENSAL\n"
-	msg+="<b>PIX EMAIL: </b>pixtopnet@gmail.com\n"
+	msg+="<b>VALOR:</b> 10 MENSAL\n"
+	msg+="<b>PIX EMAIL: </b>rodrigorocha5733@gmail.com\n"
 	msg+="<b>APERTE EM “COMPRAR ACESSO” E ENVIE SEU COMPROVANTE</b>\n\n"
         msg+="⚠️<b>APENAS CHAME SE REALMENTE FOR COMPRAR</b>⚠️\n"
         ShellBot.sendMessage --chat_id ${message_chat_id[$id]} \
@@ -30,10 +30,10 @@ criarteste() {
         --text "VC JA CRIOU SSH HOJE !"
       return 0
     }
-    usuario=$(echo lite$(( RANDOM% + 999 )))
+    usuario=$(echo Cyber$(( RANDOM% + 999 )))
     senha=$((RANDOM% + 9999))
     limite='1'
-    tempo='6'
+    tempo='2'
     tuserdate=$(date '+%C%y/%m/%d' -d " +1 days")
     useradd -M -N -s /bin/false $usuario -e $tuserdate > /dev/null 2>&1
     (echo "$senha";echo "$senha") | passwd $usuario > /dev/null 2>&1
@@ -78,7 +78,7 @@ unset botao1
 botao1=''
 ShellBot.InlineKeyboardButton --button 'botao1' --line 1 --text '♻️GERA TESTE♻️' --callback_data 'gerarssh'
 ShellBot.InlineKeyboardButton --button 'botao1' --line 2 --text '🔰BAIXAR APLICATIVO🔰' --callback_data 'appenviar'
-ShellBot.InlineKeyboardButton --button 'botao1' --line 3 --text '💲COMPRAR ACESSO💲' --callback_data '3' --url 'https://t.me/Cyberssh23'
+ShellBot.InlineKeyboardButton --button 'botao1' --line 3 --text '💲COMPRAR ACESSO💲' --callback_data '3' --url 'https://t.me/kiritosshxd'
 ShellBot.regHandleFunction --function criarteste --callback_data gerarssh
 ShellBot.regHandleFunction --function enviarapp --callback_data appenviar
 

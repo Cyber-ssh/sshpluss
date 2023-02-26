@@ -24,7 +24,7 @@ criarteste() {
     usuario=$(echo Cyber$(( RANDOM% + 999 )))
     senha=$((RANDOM% + 9999))
     limite='1'
-    tempo='6'
+    tempo='2'
     tuserdate=$(date '+%C%y/%m/%d' -d " +1 days")
     useradd -M -N -s /bin/false $usuario -e $tuserdate > /dev/null 2>&1
     (echo "$senha";echo "$senha") | passwd $usuario > /dev/null 2>&1
@@ -66,7 +66,7 @@ criaruser2() {
     usuario=$(echo Cyber$(( RANDOM% + 999 )))
     senha=$((RANDOM% + 9999))
     limite='1'
-    dias='31'
+    dias='30'
     [[ "$(grep -wc $usuario /etc/passwd)" != '0' ]] && {
     ShellBot.sendMessage --chat_id ${callback_query_message_chat_id} \
         --text "USUARIO GERADO JÁ FOI CADASTRADO, TENTE NOVAMENTE"
@@ -120,7 +120,7 @@ criaruser() {
     usuario=$(echo Cyber$(( RANDOM% + 999 )))
     senha=$((RANDOM% + 9999))
     limite='1'
-    dias='31'
+    dias='30'
     [[ "$(grep -wc $usuario /etc/passwd)" != '0' ]] && {
     ShellBot.sendMessage --chat_id ${callback_query_message_chat_id} \
         --text "USUARIO GERADO JÁ FOI CADASTRADO, TENTE NOVAMENTE"
