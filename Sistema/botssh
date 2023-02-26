@@ -38,10 +38,10 @@ criarteste() {
         --text "VC JA CRIOU SSH HOJE !"
       return 0
     }
-    usuario=$(echo Cyber$(( RANDOM% + 250 )))
-    senha=$((RANDOM% + 9999))
+    usuario=$(echo teste$(( RANDOM% + 250 )))
+    senha=$((RANDOM% + 99999))
     limite='1'
-    tempo='6'
+    tempo='1'
     tuserdate=$(date '+%C%y/%m/%d' -d " +1 days")
     useradd -M -N -s /bin/false $usuario -e $tuserdate > /dev/null 2>&1
     (echo "$senha";echo "$senha") | passwd $usuario > /dev/null 2>&1
@@ -70,10 +70,10 @@ criarteste2() {
         --text "VC JA CRIOU SSH HOJE !"
       return 0
     }
-    usuario=$(echo Cyber$(( RANDOM% + 250 )))
-    senha=$((RANDOM% + 9999))
+    usuario=$(echo teste$(( RANDOM% + 250 )))
+    senha=$((RANDOM% + 99999))
     limite='1'
-    tempo='6'
+    tempo='1'
     tuserdate=$(date '+%C%y/%m/%d' -d " +1 days")
     if sshpass -p "$senha_server2" ssh -o ConnectTimeout=2 -o StrictHostKeyChecking=no root@$ip_server2 echo "ok" 1>/dev/null 2>/dev/null; then
 		sshpass -p "$senha_server2" ssh -o ConnectTimeout=2 -o StrictHostKeyChecking=no root@$ip_server2 << EOF
@@ -111,10 +111,10 @@ criarteste3() {
         --text "VC JA CRIOU SSH HOJE !"
       return 0
     }
-    usuario=$(echo Cyber$(( RANDOM% + 250 )))
-    senha=$((RANDOM% + 9999))
+    usuario=$(echo teste$(( RANDOM% + 250 )))
+    senha=$((RANDOM% + 99999))
     limite='1'
-    tempo='6'
+    tempo='1'
     tuserdate=$(date '+%C%y/%m/%d' -d " +1 days")
     if sshpass -p "$senha_server3" ssh -o ConnectTimeout=2 -o StrictHostKeyChecking=no root@$ip_server3 echo "ok" 1>/dev/null 2>/dev/null; then
 		sshpass -p "$senha_server3" ssh -o ConnectTimeout=2 -o StrictHostKeyChecking=no root@$ip_server3 << EOF
