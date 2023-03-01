@@ -39,7 +39,7 @@ criarteste() {
       return 0
     }
     usuario=$(echo teste$(( RANDOM% + 250 )))
-    senha=$((RANDOM% + 99999))
+    senha=$((RANDOM% + 9999))
     limite='1'
     tempo='1'
     tuserdate=$(date '+%C%y/%m/%d' -d " +1 days")
@@ -71,7 +71,7 @@ criarteste2() {
       return 0
     }
     usuario=$(echo teste$(( RANDOM% + 250 )))
-    senha=$((RANDOM% + 99999))
+    senha=$((RANDOM% + 9999))
     limite='1'
     tempo='1'
     tuserdate=$(date '+%C%y/%m/%d' -d " +1 days")
@@ -112,7 +112,7 @@ criarteste3() {
       return 0
     }
     usuario=$(echo teste$(( RANDOM% + 250 )))
-    senha=$((RANDOM% + 99999))
+    senha=$((RANDOM% + 9999))
     limite='1'
     tempo='1'
     tuserdate=$(date '+%C%y/%m/%d' -d " +1 days")
