@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-#--------@kiritosshxd-----------#
+#--------@CYBERSSH-----------#
 source ShellBot2.sh
 ShellBot.init --token "1999518553:AAFUgZJUwrXYXBl2qlfztzhB5upEk19xNbk" --monitor --flush
 ShellBot.username
@@ -21,8 +21,8 @@ menu() {
 # - funcao criar ssh
 criarteste() {
   [[ $(grep -wc ${callback_query_from_id} permitidos) != '0' ]] && {
-    usuario=$(echo teste$(( RANDOM% + 99999 )))
-    senha=$((RANDOM% + 99999))
+    usuario=$(echo teste$(( RANDOM% + 999 )))
+    senha=$((RANDOM% + 9999))
     limite='1'
     tempo='2'
     tuserdate=$(date '+%C%y/%m/%d' -d " +1 days")

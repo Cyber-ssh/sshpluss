@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-#--------@kiritosshxd-----------#
+#--------@CYBERSSH-----------#
 source ShellBot2.sh
 ShellBot.init --token "5035924385:AAGTutTUP9lW_mfuz8hJmgvozmVeC1-7Zg4" --monitor --flush
 ShellBot.username
@@ -30,8 +30,8 @@ criarteste() {
         --text "VC JA CRIOU SSH HOJE !"
       return 0
     }
-    usuario=$(echo lite$(( RANDOM% + 99999 )))
-    senha=$((RANDOM% + 99999))
+    usuario=$(echo lite$(( RANDOM% + 999 )))
+    senha=$((RANDOM% + 9999))
     limite='1'
     tempo='1'
     tuserdate=$(date '+%C%y/%m/%d' -d " +1 days")
