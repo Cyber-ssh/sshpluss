@@ -1,8 +1,8 @@
 # SSHPLUS COM CHECKUSER
 
-```apt update -y && apt upgrade -y && wget https://raw.githubusercontent.com/CYBERSSH/master/Plus && chmod 777 Plus && ./Plus```
+```apt update -y && apt upgrade -y && wget https://raw.githubusercontent.com/Cyber-ssh/sshplus/master/Plus && chmod 777 Plus && ./Plus```
 
 
 #Acessa Root
 
-```wget https://raw.githubusercontent.com/CYBERSSH/master/senharoot.sh && chmod 777 senharoot.sh && ./senharoot.sh```
+```wget https://raw.githubusercontent.com/Cyber-ssh/sshplus/master/senharoot.sh && chmod 777 senharoot.sh && ./senharoot.sh```
